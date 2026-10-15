@@ -1,12 +1,42 @@
+# Local agent tools and temporary work
+/.agents/
+/tmp/
+
+# Terraform downloads, state, plans and local variable values
 .terraform/
 *.tfstate
 *.tfstate.*
 *.tfplan
-terraform.tfvars
+*.tfvars
+*.tfvars.json
+!*.tfvars.example
+!*.tfvars.json.example
+crash.log
+crash.*.log
 .build/
+
+# Python environments and caches
 .venv/
+venv/
 __pycache__/
-*.pyc
+*.py[cod]
+.pytest_cache/
+.ruff_cache/
+.mypy_cache/
+.coverage
+htmlcov/
+
+# Local environment and credentials (keep shareable templates)
 .env
+.env.*
+!.env.example
+!.env.template
 application_default_credentials.json
+
+# Generated simulator output
 lab/simulator/requests.csv
+
+# OS metadata
+.DS_Store
+Thumbs.db
+Desktop.ini
