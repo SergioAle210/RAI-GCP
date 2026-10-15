@@ -1,0 +1,5 @@
+project_id      = "lab-api-observable-sergio"
+region          = "us-central1"
+function_name   = "orders-api"
+failure_rate    = 0.02
+student_members = []
